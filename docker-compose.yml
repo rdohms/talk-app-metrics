@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  prometheus:
+    build: ./docker/prom
+    volumes:
+       - .:/opt/
+    ports:
+        - 9090:9090
+
+  php:
+    build: ./docker/php
+    ports:
+        - 8180:8180
+    volumes:
+       - .:/opt/
