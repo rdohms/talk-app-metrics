@@ -1,5 +1,6 @@
 {
     "require": {
-        "jimdo/prometheus_client_php": "dev-master"
+        "promphp/prometheus_client_php": "^2.7",
+        "php": "^8.2"
     }
 }
